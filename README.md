@@ -48,16 +48,31 @@ The chatbot follows these steps:
 ```text
 CodeAlpha_FAQ_Chatbot/
 │
-├── app.py
-├── chatbot.py
-├── faqs.json
-├── requirements.txt
-├── README.md
-├── .gitignore
-│
+├── api/
+│   └── index.py            # Vercel serverless function entrypoint
+├── public/                 # Static CDN files for Vercel
+│   └── static/
+│       ├── style.css
+│       └── script.js
 ├── templates/
-│   └── index.html
-│
-└── static/
-    ├── style.css
-    └── script.js
+│   └── index.html          # Jinja2 template
+├── static/
+│   ├── style.css
+│   └── script.js
+├── app.py                  # Flask web application
+├── chatbot.py              # NLP & similarity engine
+├── faqs.json               # FAQ dataset
+├── requirements.txt        # Python dependencies
+├── vercel.json             # Vercel routing & configuration
+├── .vercelignore           # Vercel build exclusions
+├── .gitignore
+└── README.md
+```
+
+## Deployment on Vercel
+
+1. Log in to [Vercel](https://vercel.com/sai18-hub).
+2. Click **Add New...** > **Project**.
+3. Import the repository: `https://github.com/Sai18-hub/CodeAlpha_FAQ_Chatbot`.
+4. Keep the default settings (Framework Preset: **Other**, Root Directory: `./`).
+5. Click **Deploy**. Vercel will install dependencies from `requirements.txt` and serve the application using the serverless Python runtime.
