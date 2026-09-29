@@ -3,12 +3,20 @@
   "version": 2,
   "functions": {
     "api/index.py": {
-      "includeFiles": "{templates/**,static/**,faqs.json}"
+      "includeFiles": "{templates/**,static/**,faqs.json,index.html}"
     }
   },
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/chat",
+      "destination": "/api/index.py"
+    },
+    {
+      "source": "/api/chat",
+      "destination": "/api/index.py"
+    },
+    {
+      "source": "/api/(.*)",
       "destination": "/api/index.py"
     }
   ]
