@@ -1,0 +1,50 @@
+[
+    {
+        "question": "What are your working hours?",
+        "answer": "Our working hours are 9 AM to 6 PM, Monday to Friday."
+    },
+    {
+        "question": "How can I contact customer support?",
+        "answer": "You can contact customer support through email or phone during working hours."
+    },
+    {
+        "question": "What services do you provide?",
+        "answer": "We provide software development, web development, AI solutions, and technical consulting services."
+    },
+    {
+        "question": "How can I reset my password?",
+        "answer": "You can reset your password by clicking the 'Forgot Password' option on the login page."
+    },
+    {
+        "question": "How do I create an account?",
+        "answer": "Click on the Sign Up button, enter your details, and follow the instructions to create your account."
+    },
+    {
+        "question": "Do you provide refunds?",
+        "answer": "Yes, refunds are available according to our refund policy. Please contact customer support for more details."
+    },
+    {
+        "question": "Where are you located?",
+        "answer": "Our office is located in Hyderabad, Telangana, India."
+    },
+    {
+        "question": "How can I apply for an internship?",
+        "answer": "You can apply for internships through our official career or internship application page."
+    },
+    {
+        "question": "What programming languages do you support?",
+        "answer": "We work with Python, Java, JavaScript, C++, and several other programming languages."
+    },
+    {
+        "question": "Do you offer technical support?",
+        "answer": "Yes, technical support is available during our working hours."
+    },
+    {
+        "question": "How long does it take to get a response?",
+        "answer": "Most queries receive a response within 24 to 48 hours."
+    },
+    {
+        "question": "Can I cancel my service?",
+        "answer": "Yes, you can request cancellation by contacting our customer support team."
+    }
+]
