@@ -1,3 +1,4 @@
+import os
 import json
 import re
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -5,7 +6,9 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 
 # Load FAQ data
-with open("faqs.json", "r", encoding="utf-8") as file:
+_current_dir = os.path.dirname(os.path.abspath(__file__))
+_faq_path = os.path.join(_current_dir, "faqs.json")
+with open(_faq_path, "r", encoding="utf-8") as file:
     faqs = json.load(file)
 
 
